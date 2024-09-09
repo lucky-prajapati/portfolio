@@ -17,9 +17,9 @@ import { ReactTyped } from "react-typed";
 function Home() {
   return (
     <>
-    <div className='max-w-screen-2xl container mx-auto px-4 md:px-20 my-20'>
+    <div name="Home" className='max-w-screen-2xl container mx-auto px-4 md:px-20 my-20'>
         <div className='flex flex-col md:flex-row'>
-            <div className='md:w-1/2 mt-12 md:mt-24 space-y-2'>
+            <div className='md:w-1/2 mt-12 md:mt-24 space-y-2 order-2 md:order-1'>
                 <span>Welcome In My Feed</span>
                 <div className='flex space-x-1 text-2xl md:text-4xl '>
                     <h1>Hello, I'm a</h1>
@@ -44,14 +44,14 @@ function Home() {
                 </p>
                 <br />
                 {/* Social media icons */}
-                <div className='flex justify-between'>
+                <div className='flex flex-col items-center md:flex-row justify-between space-y-6 md:space-y-0 '>
                     <div className='space-y-2'>
                         <h1 className='font-bold'>Available on</h1>
                         <ul className='flex space-x-5'>
-                            <li><FaSquareFacebook className='text-2xl cursor-pointer' /></li>
-                            <li><FaLinkedin className='text-2xl cursor-pointer' /></li>
-                            <li><IoLogoYoutube className='text-2xl cursor-pointer' /></li>
-                            <li><FaTelegram className='text-2xl cursor-pointer' /></li>
+                            <li> <a href="https://www.facebook.com/" target='_blanck' > <FaSquareFacebook className='text-2xl cursor-pointer' /></a></li>
+                            <li> <a href=""> <FaLinkedin className='text-2xl cursor-pointer' /></a></li>
+                            <li><a href=""><IoLogoYoutube className='text-2xl cursor-pointer' /></a></li>
+                            <li><a href=""><FaTelegram className='text-2xl cursor-pointer' /></a></li>
                         </ul>
                     </div>
                     <div className='space-y-2'>
@@ -65,7 +65,7 @@ function Home() {
                     </div>  
                 </div>
             </div>
-        <div className='md:w-1/2 ml-72 mt-20'>
+        <div className='md:w-1/2 md:ml-48 md:mt-20 mt-8 order-1'>
             <img src={pic} className='rounded-full w-[550px] h-[550px]' alt="" />
         </div>
         </div>
